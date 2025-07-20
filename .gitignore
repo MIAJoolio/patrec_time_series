@@ -1,2 +1,17 @@
+# venvs name
 .venv/
+.basic_venv/
+.basic_venv_310/
+# mlflow
+.runs/
+.artifacts/
+.backend/
+.temp/
+
+# Ignore all .Identifier files
+*.Identifier
+__pycache__/
+
+# folders
 data/
+examples/trash.ipynb

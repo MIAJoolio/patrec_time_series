@@ -1,0 +1,12 @@
+period:
+    type: int
+    low: 2
+    high: 20
+trend_deg:
+    type: int
+    low: 0
+    high: 1
+seasonal_deg:
+    type: int
+    low: 0
+    high: 1

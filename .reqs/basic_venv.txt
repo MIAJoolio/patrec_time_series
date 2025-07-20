@@ -1,0 +1,16 @@
+dotenv
+scipy
+numpy
+jupyter
+matplotlib
+pandas
+scikit-learn
+torch
+mlflow
+# aug
+tsaug
+tsgm
+pypots
+# base ts libs
+sktime
+pyts
