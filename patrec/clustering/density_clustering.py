@@ -1,9 +1,9 @@
 from sklearn.cluster import DBSCAN, Birch
 
-from patrec.clustering.Base_clustering_model import Base_clustering_model
+from patrec.clustering.base import Base_clustering_model
 
 from sklearn.cluster import DBSCAN
-from .Base_clustering_model import Base_clustering_model
+from .base import Base_clustering_model
 
 
 class DBSCAN_model(Base_clustering_model):

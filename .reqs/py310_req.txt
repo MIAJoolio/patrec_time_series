@@ -7,10 +7,10 @@ pandas
 scikit-learn
 torch
 mlflow
-# aug
 tsaug
 tsgm
 pypots
-# base ts libs
 sktime
 pyts
+keras
+tensorflow

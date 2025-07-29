@@ -5,7 +5,7 @@ import numpy as np
 
 from bs4 import BeautifulSoup
 
-# from aeon.datasets import load_classification
+from aeon.datasets import load_classification
 
 
 __all__ = [

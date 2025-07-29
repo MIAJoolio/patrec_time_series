@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 from typing import Callable, Any, Optional, Union
-
+import numpy as np
 
 class Decomp_Model(ABC):
     @abstractmethod

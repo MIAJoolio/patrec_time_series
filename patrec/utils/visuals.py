@@ -36,13 +36,13 @@ def plot_series(series_list, labels=None, colors=None, plot_title="Title",
         Путь для сохранения графика. Если None, график только отображается
     """
     
-    # Преобразуем одиночный ряд в список
-    if not isinstance(series_list, (list, tuple)):
-        series_list = [series_list]
-        if labels is not None:
-            labels = [labels]
-        if colors is not None:
-            colors = [colors]
+    # # Преобразуем одиночный ряд в список
+    # if not isinstance(series_list, (list, tuple)):
+    #     series_list = [series_list]
+    #     if labels is not None:
+    #         labels = [labels]
+    #     if colors is not None:
+    #         colors = [colors]
 
     # Автоматическое назначение меток, если их нет
     if labels is None:
@@ -58,10 +58,10 @@ def plot_series(series_list, labels=None, colors=None, plot_title="Title",
 
     plt.figure(figsize=figsize)
     for i, series in enumerate(series_list):
-        kwargs = {}
+        kwargs = {'label': labels[i]}
         if colors:
             kwargs['color'] = colors[i]
-        plt.plot(series, label=labels[i], **kwargs)
+        plt.plot(series, **kwargs)  
     
     plt.title(plot_title)
     plt.xlabel(xlabel)

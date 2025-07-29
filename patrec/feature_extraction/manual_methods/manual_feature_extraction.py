@@ -6,7 +6,7 @@ from statsmodels.tsa.stattools import acf
 from scipy.stats import skew, kurtosis
 
 # piecewise 
-from tslearn.piecewise import PiecewiseAggregateApproximation
+# from tslearn.piecewise import PiecewiseAggregateApproximation
 
 # анализ пиков 
 from scipy.signal import argrelmin, argrelmax, find_peaks, find_peaks_cwt, peak_prominences, peak_widths

@@ -1,6 +1,6 @@
 from sklearn.cluster import AgglomerativeClustering
 
-from patrec.clustering.Base_clustering_model import Base_clustering_model
+from patrec.clustering.base import Base_clustering_model
 
 class AC_model(Base_clustering_model):
     """

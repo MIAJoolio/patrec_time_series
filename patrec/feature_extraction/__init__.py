@@ -1,6 +1,5 @@
 from .stats_methods import * 
 
-
 from .manual_methods.TS_feature_extractor import Feature_extraction_method, Feature_extractor_pipeline 
 from .manual_methods.manual_feature_extraction import *
 

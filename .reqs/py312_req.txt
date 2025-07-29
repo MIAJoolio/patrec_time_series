@@ -1,0 +1,16 @@
+dotenv
+scipy
+numpy
+jupyter
+matplotlib
+pandas
+scikit-learn
+torch
+mlflow
+tsaug
+pypots
+sktime
+pyts
+aeon
+statsmodels
+PyWavelets
