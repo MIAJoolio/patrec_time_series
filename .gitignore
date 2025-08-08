@@ -1,0 +1,17 @@
+# venvs name
+.py310_venv
+.py312_venv
+
+# mlflow
+.artifacts/
+.backend/
+.temp/
+.env/
+
+# Ignore all .Identifier files
+*.Identifier
+__pycache__/
+legacy/
+
+# folders to ignore
+data/
