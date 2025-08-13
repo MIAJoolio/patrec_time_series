@@ -1,0 +1,17 @@
+model_init:
+  output_dims: 128
+  hidden_dims: 64
+  depth: 10
+  lr: 0.001
+  device: "cuda:1"
+  batch_size: 8
+model_training:
+  n_epochs: 20
+  # n_iters: 200
+  verbose: True
+encode_params:
+  encoding_window: "full_series" # значит используется "full_series", "multiscale", int для ядра
+  sliding_length: 1
+  sliding_padding: 50
+  batch_size: 1
+model_save_path: "experiments/FE_with_ts2vec/ts2vec_config1/model.pt"

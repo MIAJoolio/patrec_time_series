@@ -1,0 +1,4 @@
+period: 20
+trend_deg: 1
+seasonal_deg: 1
+robust: true
