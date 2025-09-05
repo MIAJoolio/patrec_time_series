@@ -43,10 +43,4 @@ class TrendLinearPreprocessor(BaseParametricPreprocessor):
         trend = slope * x + intercept
         features = self._extract_features(trend, data)
 
-        return DecompositionResult(
-            component=data - trend,
-            component_type=FEComponentType.TREND,
-            method_name='linear_trend',
-            params=self.params.copy(),
-            stats={'features': features}
-        )
+        return trend, features

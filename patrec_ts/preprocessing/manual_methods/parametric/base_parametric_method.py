@@ -18,14 +18,12 @@ class BaseParametricPreprocessor(BasePreprocessor, ABC):
         return self
 
     def transform(self, data: np.ndarray) -> np.ndarray:
-        output = []
-        for ds_index in range(data.shape[0]):
-            features = []
-            for feature_index in range(data[ds_index].shape[0]):
-                res = self.decompose(data[ds_index][feature_index])
-                features.append(res.component)
+        output = np.zeros_like(data)
 
-            output.append(np.array(features))
+        for ds_index in range(data.shape[0]):
+            for feature_index in range(data[ds_index].shape[0]):
+                out_ = self.decompose(data[ds_index, feature_index])
+                output[ds_index, feature_index] = out_.component
 
         return np.array(output)
 

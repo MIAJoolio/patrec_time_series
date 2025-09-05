@@ -32,10 +32,12 @@ data: StratifiedTSLoader = StratifiedTSLoader(
     filepath=ds_path / 'ds.json',
 )
 
+# K, F, 4, N
+
 pipeline = Pipeline(steps=[
     ('trend', TrendLinearPreprocessor()),
     # ('season', SeasonDFTPreprocessor()),
-    ('cluster_method', TimeSeriesCLARA(n_clusters=11))
+    ('cluster_method', TimeSeriesCLARA(n_clusters=11)),  # (K, C, N)
     # ('cluster_method', TSLearnTimeSeriesKMeans(n_clusters=4))
 ])
 
