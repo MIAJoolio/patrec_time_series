@@ -36,11 +36,16 @@ class TrendLinearPreprocessor(BaseParametricPreprocessor):
         """
         self._check_data_input(data)
 
-        # Получаем x из params или создаём стандартный
         x = np.arange(data.shape[0])
 
         slope, intercept, _, _, _ = stats.linregress(x=x, y=data)
         trend = slope * x + intercept
         features = self._extract_features(trend, data)
 
-        return trend, features
+        return DecompositionResult(
+            component=data - trend,
+            component_type=FEComponentType.TREND,
+            method_name='linear_trend',
+            params=self.params.copy(),
+            stats={'features': features}
+        )

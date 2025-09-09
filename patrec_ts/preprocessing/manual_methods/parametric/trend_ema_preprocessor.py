@@ -27,7 +27,7 @@ class TrendEMAPreprocessor(BaseParametricPreprocessor):
             'trend_lag_correlation': float(lag_corr)
         }
 
-    def decompose(self, data: np.ndarray, opt: bool = True, **kwargs) -> DecompositionResult:
+    def decompose(self, data: np.ndarray, opt: bool = False, **kwargs) -> DecompositionResult:
         if opt:
             self._optimize_params(data)
 

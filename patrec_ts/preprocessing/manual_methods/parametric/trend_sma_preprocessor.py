@@ -23,7 +23,7 @@ class TrendSMAPreprocessor(BaseParametricPreprocessor):
             'trend_lag_correlation': np.corrcoef(data[self.window:], trend[:-self.window])[0,1]
         }
 
-    def decompose(self, data: np.ndarray, opt: bool = True, **kwargs) -> DecompositionResult:
+    def decompose(self, data: np.ndarray, opt: bool = False, **kwargs) -> DecompositionResult:
         if opt:
             self._optimize_params(data)
 
