@@ -12,6 +12,8 @@
 *.Identifier
 __pycache__/
 legacy/
+poetry.lock
 
 # folders to ignore
 data/
+poetry.lock

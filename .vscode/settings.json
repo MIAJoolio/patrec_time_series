@@ -1,0 +1,8 @@
+{
+    "python.defaultInterpreterPath": ".py312_venv/Scripts/python.exe",
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}"
+    ],
+    "python.testing.unittestEnabled": true,
+    "python.testing.pytestEnabled": false
+}

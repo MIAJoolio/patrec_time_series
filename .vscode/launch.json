@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+    
+        {
+            "name": "Debug Main",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}", // "patrec_ts/main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "stopOnEntry": false,
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            },
+            "django": false,
+            "redirectOutput": true
+        }
+    ]
+}
